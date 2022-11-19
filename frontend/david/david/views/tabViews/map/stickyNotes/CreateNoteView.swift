@@ -10,10 +10,9 @@ import SwiftUI
 struct CreateNoteView: View {
     var body: some View {
         NavigationView{}
-        ZStack {
-            Image
+        
             
-        }
+        
     }
 }
 

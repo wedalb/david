@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		429F5F9D29299CCB001443AE /* LoadingNotesLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 429F5F9C29299CCB001443AE /* LoadingNotesLottie.json */; };
 		429FE99E2929220B006B4A64 /* davidApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE99D2929220B006B4A64 /* davidApp.swift */; };
 		429FE9A22929220D006B4A64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 429FE9A12929220D006B4A64 /* Assets.xcassets */; };
 		429FE9A52929220D006B4A64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 429FE9A42929220D006B4A64 /* Preview Assets.xcassets */; };
@@ -35,16 +36,17 @@
 		429FE9F329296E45006B4A64 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9F229296E45006B4A64 /* RequestHandler.swift */; };
 		429FE9F7292970EB006B4A64 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9F6292970EB006B4A64 /* MapViewModel.swift */; };
 		429FE9F92929735A006B4A64 /* LeaderBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9F82929735A006B4A64 /* LeaderBoardViewModel.swift */; };
+		429FE9FC29297EC7006B4A64 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 429FE9FB29297EC7006B4A64 /* Lottie */; };
+		429FE9FE29297F75006B4A64 /* ErrorMessageLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 429FE9FD29297F75006B4A64 /* ErrorMessageLottie.json */; };
+		429FEA0229298608006B4A64 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FEA0129298608006B4A64 /* LottieView.swift */; };
 		6BA374B729297AC800557FD6 /* CreateNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA374B629297AC800557FD6 /* CreateNoteView.swift */; };
 		6BA374B929297EA700557FD6 /* CircleButtomModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA374B829297EA700557FD6 /* CircleButtomModifier.swift */; };
 		6BD2903C29294E9E003FF0B1 /* Map_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD2903B29294E9E003FF0B1 /* Map_2.swift */; };
 		6BD2903E29294ED0003FF0B1 /* MapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD2903D29294ED0003FF0B1 /* MapButton.swift */; };
-		429FE9FC29297EC7006B4A64 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 429FE9FB29297EC7006B4A64 /* Lottie */; };
-		429FE9FE29297F75006B4A64 /* ErrorMessageLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 429FE9FD29297F75006B4A64 /* ErrorMessageLottie.json */; };
-		429FEA0229298608006B4A64 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FEA0129298608006B4A64 /* LottieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		429F5F9C29299CCB001443AE /* LoadingNotesLottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LoadingNotesLottie.json; sourceTree = "<group>"; };
 		429FE99A2929220B006B4A64 /* david.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = david.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		429FE99D2929220B006B4A64 /* davidApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = davidApp.swift; sourceTree = "<group>"; };
 		429FE9A12929220D006B4A64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,12 +81,12 @@
 		429FE9F229296E45006B4A64 /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
 		429FE9F6292970EB006B4A64 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		429FE9F82929735A006B4A64 /* LeaderBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardViewModel.swift; sourceTree = "<group>"; };
+		429FE9FD29297F75006B4A64 /* ErrorMessageLottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ErrorMessageLottie.json; sourceTree = "<group>"; };
+		429FEA0129298608006B4A64 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		6BA374B629297AC800557FD6 /* CreateNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteView.swift; sourceTree = "<group>"; };
 		6BA374B829297EA700557FD6 /* CircleButtomModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtomModifier.swift; sourceTree = "<group>"; };
 		6BD2903B29294E9E003FF0B1 /* Map_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map_2.swift; sourceTree = "<group>"; };
 		6BD2903D29294ED0003FF0B1 /* MapButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapButton.swift; sourceTree = "<group>"; };
-		429FE9FD29297F75006B4A64 /* ErrorMessageLottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ErrorMessageLottie.json; sourceTree = "<group>"; };
-		429FEA0129298608006B4A64 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 		429FE9E029293F8C006B4A64 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				429F5F9C29299CCB001443AE /* LoadingNotesLottie.json */,
 				429FE9FD29297F75006B4A64 /* ErrorMessageLottie.json */,
 				429FE9E629293F9E006B4A64 /* fonts */,
 			);
@@ -364,6 +367,7 @@
 				429FE9A52929220D006B4A64 /* Preview Assets.xcassets in Resources */,
 				429FE9FE29297F75006B4A64 /* ErrorMessageLottie.json in Resources */,
 				429FE9A22929220D006B4A64 /* Assets.xcassets in Resources */,
+				429F5F9D29299CCB001443AE /* LoadingNotesLottie.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
