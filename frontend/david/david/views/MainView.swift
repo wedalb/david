@@ -15,7 +15,7 @@ struct MainView: View {
                     Label("Leaderboard", systemImage: "list.number")
                 }
 
-            MapView()
+            KartenView()
                 .tabItem {
                     Label("Map", systemImage: "map")
                 }
