@@ -9,24 +9,18 @@ import SwiftUI
 
 struct MapButton: View {
     var body: some View {
-        ZStack {
-            MapView()
-            HStack {
-                Spacer().frame(width: UIScreen.main.bounds.width-80, height: 36.0, alignment: .topLeading)
-                Button(action: {
-                }){
-                    ZStack{
-                        Circle()
-                            .frame(width: 60, height: 60)
-                            .foregroundColor(.black)
+        NavigationView {
+            ZStack {
+                MapView()
+                HStack {
+                    Spacer().frame(width: UIScreen.main.bounds.width-80, height: 36.0, alignment: .topLeading)
+                    NavigationLink(destination: CreateNoteView()) {
                         Image(systemName: "plus")
-                        //                             .frame(width: 20, height: 20)
-                            .foregroundColor(.white)
-                            .font(.largeTitle)
+                            .modifier(CircleButtonModifier())
                             .padding(100)
+                    }
+                    .navigationBarHidden(true).frame(maxHeight: .infinity, alignment: .top)
                 }
-                }.frame(maxHeight: .infinity, alignment: .topLeading)
-
             }
         }
     }
