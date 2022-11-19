@@ -10,12 +10,19 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         TabView {
+            
             LeaderBoardView()
                 .tabItem {
                     Label("Leaderboard", systemImage: "list.number")
                 }
 
-            MapView()
+            ZStack {
+                KartenView()
+                Rectangle()
+                    .frame(height: 0.5)
+                    .foregroundColor(Color.clear)
+                            
+            }
                 .tabItem {
                     Label("Map", systemImage: "map")
                 }

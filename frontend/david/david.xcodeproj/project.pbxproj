@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		429FE97D2928D990006B4A64 /* KartenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE97C2928D990006B4A64 /* KartenViewModel.swift */; };
+		429FE97F2928D9C0006B4A64 /* KartenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE97E2928D9C0006B4A64 /* KartenView.swift */; };
+		429FE9812928DEF5006B4A64 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9802928DEF5006B4A64 /* HTTPMethod.swift */; };
+		429FE9862928E366006B4A64 /* DavidClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9852928E366006B4A64 /* DavidClient.swift */; };
 		42D821C7292859D50010605F /* davidApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D821C6292859D50010605F /* davidApp.swift */; };
 		42D821C9292859D50010605F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D821C8292859D50010605F /* ContentView.swift */; };
 		42D821CB292859D70010605F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D821CA292859D70010605F /* Assets.xcassets */; };
@@ -25,6 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		429FE97C2928D990006B4A64 /* KartenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KartenViewModel.swift; sourceTree = "<group>"; };
+		429FE97E2928D9C0006B4A64 /* KartenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KartenView.swift; sourceTree = "<group>"; };
+		429FE9802928DEF5006B4A64 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		429FE9852928E366006B4A64 /* DavidClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DavidClient.swift; sourceTree = "<group>"; };
 		42D821C3292859D50010605F /* david.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = david.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D821C6292859D50010605F /* davidApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = davidApp.swift; sourceTree = "<group>"; };
 		42D821C8292859D50010605F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		429FE9842928E348006B4A64 /* apiServices */ = {
+			isa = PBXGroup;
+			children = (
+				429FE9852928E366006B4A64 /* DavidClient.swift */,
+			);
+			path = apiServices;
+			sourceTree = "<group>";
+		};
 		42D821BA292859D50010605F = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +94,7 @@
 		42D821C5292859D50010605F /* david */ = {
 			isa = PBXGroup;
 			children = (
+				429FE9842928E348006B4A64 /* apiServices */,
 				42D821F6292864A90010605F /* model */,
 				42D821F52928649D0010605F /* viewModel */,
 				42D821ED29285DFD0010605F /* utils */,
@@ -108,6 +125,7 @@
 				42D821D729285B1D0010605F /* AccountView.swift */,
 				42D821D929285B2D0010605F /* LeaderBoardView.swift */,
 				42D821DB29285B360010605F /* MapView.swift */,
+				429FE97E2928D9C0006B4A64 /* KartenView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -163,6 +181,7 @@
 		42D821F52928649D0010605F /* viewModel */ = {
 			isa = PBXGroup;
 			children = (
+				429FE97C2928D990006B4A64 /* KartenViewModel.swift */,
 			);
 			path = viewModel;
 			sourceTree = "<group>";
@@ -170,6 +189,7 @@
 		42D821F6292864A90010605F /* model */ = {
 			isa = PBXGroup;
 			children = (
+				429FE9802928DEF5006B4A64 /* HTTPMethod.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -251,10 +271,14 @@
 				42D821E629285D690010605F /* ProfilePictureModifier.swift in Sources */,
 				42D821C9292859D50010605F /* ContentView.swift in Sources */,
 				42D821D629285ADE0010605F /* MainView.swift in Sources */,
+				429FE97D2928D990006B4A64 /* KartenViewModel.swift in Sources */,
 				42D821E829285D960010605F /* TextModifier.swift in Sources */,
 				42D821EF29285E0A0010605F /* Color.swift in Sources */,
+				429FE97F2928D9C0006B4A64 /* KartenView.swift in Sources */,
+				429FE9812928DEF5006B4A64 /* HTTPMethod.swift in Sources */,
 				42D821C7292859D50010605F /* davidApp.swift in Sources */,
 				42D821E429285D4B0010605F /* DescriptionModifier.swift in Sources */,
+				429FE9862928E366006B4A64 /* DavidClient.swift in Sources */,
 				42D821E129285D1A0010605F /* TextComponent.swift in Sources */,
 				42D821DA29285B2D0010605F /* LeaderBoardView.swift in Sources */,
 			);
@@ -388,6 +412,7 @@
 				DEVELOPMENT_TEAM = SR29XA88VK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to idk";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -417,6 +442,7 @@
 				DEVELOPMENT_TEAM = SR29XA88VK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to idk";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
