@@ -11,7 +11,8 @@ struct MainView: View {
     var body: some View {
         TabView {
             
-            LeaderBoardView()
+            //LeaderBoardView()
+            StickyNoteView()
                 .tabItem {
                     Label("Leaderboard", systemImage: "list.number")
                 }

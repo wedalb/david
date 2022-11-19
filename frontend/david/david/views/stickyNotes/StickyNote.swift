@@ -7,18 +7,21 @@
 
 import SwiftUI
 
-struct VCard: View {
+struct StickyNote: View {
     var note: NoteStruct
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text(note.note_title)
+                .modifier(TitleModifier())
                 .frame(maxWidth: 170, alignment: .leading)
                 .layoutPriority(1)
             Text(note.note_description)
+                .modifier(DescriptionModifier())
                 .opacity(0.7)
                 .frame(maxWidth: .infinity, alignment: .leading)
             Text(note.note_title.uppercased())
+                .modifier(TitleModifier())
                 .opacity(0.7)
             Spacer()
         }
@@ -26,7 +29,7 @@ struct VCard: View {
         .padding(30)
         .frame(width: 260, height: 310)
         .background(Color.accentColor)
-        .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
+        .mask(RoundedRectangle(cornerRadius: 5, style: .continuous))
         .shadow(radius: 8, x: 0, y: 12)
         .shadow(radius: 2, x: 0, y: 1)
 
