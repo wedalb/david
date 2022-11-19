@@ -5,31 +5,28 @@
     };
     objectVersion = 56;
     objects = {
-
-/* Begin PBXBuildFile section */
-        429FE97D2928D990006B4A64 /* KartenViewModel.swift in Sources / = {isa = PBXBuildFile; fileRef = 429FE97C2928D990006B4A64 / KartenViewModel.swift */; };
-        429FE97F2928D9C0006B4A64 /* KartenView.swift in Sources / = {isa = PBXBuildFile; fileRef = 429FE97E2928D9C0006B4A64 / KartenView.swift */; };
-        429FE9812928DEF5006B4A64 /* HTTPMethod.swift in Sources / = {isa = PBXBuildFile; fileRef = 429FE9802928DEF5006B4A64 / HTTPMethod.swift */; };
-        429FE9862928E366006B4A64 /* DavidClient.swift in Sources / = {isa = PBXBuildFile; fileRef = 429FE9852928E366006B4A64 / DavidClient.swift */; };
-        429FE98929290350006B4A64 /* Note.swift in Sources / = {isa = PBXBuildFile; fileRef = 429FE98829290350006B4A64 / Note.swift */; };
-        429FE98C292904A3006B4A64 /* UserSettings.swift in Sources / = {isa = PBXBuildFile; fileRef = 429FE98B292904A3006B4A64 / UserSettings.swift */; };
-        429FE98E29290565006B4A64 /* NoteCategory.swift in Sources / = {isa = PBXBuildFile; fileRef = 429FE98D29290565006B4A64 / NoteCategory.swift */; };
-        429FE990292905B6006B4A64 /* UserSettingsManager.swift in Sources / = {isa = PBXBuildFile; fileRef = 429FE98F292905B6006B4A64 / UserSettingsManager.swift */; };
-        42D821C7292859D50010605F /* davidApp.swift in Sources / = {isa = PBXBuildFile; fileRef = 42D821C6292859D50010605F / davidApp.swift */; };
-        42D821CB292859D70010605F /* Assets.xcassets in Resources / = {isa = PBXBuildFile; fileRef = 42D821CA292859D70010605F / Assets.xcassets */; };
-        42D821CE292859D70010605F /* Preview Assets.xcassets in Resources / = {isa = PBXBuildFile; fileRef = 42D821CD292859D70010605F / Preview Assets.xcassets */; };
-        42D821D629285ADE0010605F /* MainView.swift in Sources / = {isa = PBXBuildFile; fileRef = 42D821D529285ADE0010605F / MainView.swift */; };
-        42D821D829285B1D0010605F /* AccountView.swift in Sources / = {isa = PBXBuildFile; fileRef = 42D821D729285B1D0010605F / AccountView.swift */; };
-        42D821DA29285B2D0010605F /* LeaderBoardView.swift in Sources / = {isa = PBXBuildFile; fileRef = 42D821D929285B2D0010605F / LeaderBoardView.swift */; };
-        42D821DC29285B360010605F /* MapView.swift in Sources / = {isa = PBXBuildFile; fileRef = 42D821DB29285B360010605F / MapView.swift */; };
-        42D821DF29285CFF0010605F /* ListComponent.swift in Sources / = {isa = PBXBuildFile; fileRef = 42D821DE29285CFF0010605F / ListComponent.swift */; };
-        42D821E129285D1A0010605F /* TextComponent.swift in Sources / = {isa = PBXBuildFile; fileRef = 42D821E029285D1A0010605F / TextComponent.swift */; };
-        42D821E429285D4B0010605F /* DescriptionModifier.swift in Sources / = {isa = PBXBuildFile; fileRef = 42D821E329285D4B0010605F / DescriptionModifier.swift */; };
-        42D821E629285D690010605F /* ProfilePictureModifier.swift in Sources / = {isa = PBXBuildFile; fileRef = 42D821E529285D690010605F / ProfilePictureModifier.swift */; };
-        42D821E829285D960010605F /* TextModifier.swift in Sources / = {isa = PBXBuildFile; fileRef = 42D821E729285D960010605F / TextModifier.swift */; };
-        42D821EA29285DB90010605F /* TitleModifier.swift in Sources / = {isa = PBXBuildFile; fileRef = 42D821E929285DB90010605F / TitleModifier.swift */; };
-        42D821EF29285E0A0010605F /* Color.swift in Sources / = {isa = PBXBuildFile; fileRef = 42D821EE29285E0A0010605F / Color.swift */; };
-/* End PBXBuildFile section */
+        429FE97D2928D990006B4A64 KartenViewModel.swift in Sources = {isa = PBXBuildFile; fileRef = 429FE97C2928D990006B4A64 KartenViewModel.swift ;};
+        429FE97F2928D9C0006B4A64 KartenView.swift in Sources  = {isa = PBXBuildFile; fileRef = 429FE97E2928D9C0006B4A64 KartenView.swift ;};
+        429FE9812928DEF5006B4A64 HTTPMethod.swift in Sources  = {isa = PBXBuildFile; fileRef = 429FE9802928DEF5006B4A64 sHTTPMethod.swift ;};
+        429FE9862928E366006B4A64 DavidClient.swift in Sources  = {isa = PBXBuildFile; fileRef = 429FE9852928E366006B4A64 DavidClient.swift ;};
+        429FE98929290350006B4A64 Note.swift in Sources  = {isa = PBXBuildFile; fileRef = 429FE98829290350006B4A64 Note.swift ;};
+        429FE98C292904A3006B4A64 UserSettings.swift in Sources  = {isa = PBXBuildFile; fileRef = 429FE98B292904A3006B4A64 UserSettings.swift ;};
+        429FE98E29290565006B4A64 NoteCategory.swift in Sources  = {isa = PBXBuildFile; fileRef = 429FE98D29290565006B4A64 NoteCategory.swift ;};
+        429FE990292905B6006B4A64 UserSettingsManager.swift in Sources  = {isa = PBXBuildFile; fileRef = 429FE98F292905B6006B4A64 UserSettingsManager.swift ;};
+        42D821C7292859D50010605F davidApp.swift in Sources  = {isa = PBXBuildFile; fileRef = 42D821C6292859D50010605F davidApp.swift ;};
+        42D821CB292859D70010605F Assets.xcassets in Resources  = {isa = PBXBuildFile; fileRef = 42D821CA292859D70010605F Assets.xcassets ;};
+        42D821CE292859D70010605F Preview Assets.xcassets in Resources  = {isa = PBXBuildFile; fileRef = 42D821CD292859D70010605F Preview Assets.xcassets ;};
+        42D821D629285ADE0010605F MainView.swift in Sources  = {isa = PBXBuildFile; fileRef = 42D821D529285ADE0010605F MainView.swift ;};
+        42D821D829285B1D0010605F AccountView.swift in Sources  = {isa = PBXBuildFile; fileRef = 42D821D729285B1D0010605F AccountView.swift ;};
+        42D821DA29285B2D0010605F LeaderBoardView.swift in Sources  = {isa = PBXBuildFile; fileRef = 42D821D929285B2D0010605F LeaderBoardView.swift ;};
+        42D821DC29285B360010605F MapView.swift in Sources  = {isa = PBXBuildFile; fileRef = 42D821DB29285B360010605F MapView.swift ;};
+        42D821DF29285CFF0010605F ListComponent.swift in Sources  = {isa = PBXBuildFile; fileRef = 42D821DE29285CFF0010605F ListComponent.swift ;};
+        42D821E129285D1A0010605F TextComponent.swift in Sources  = {isa = PBXBuildFile; fileRef = 42D821E029285D1A0010605F TextComponent.swift ;};
+        42D821E429285D4B0010605F DescriptionModifier.swift in Sources  = {isa = PBXBuildFile; fileRef = 42D821E329285D4B0010605F DescriptionModifier.swift ;};
+        42D821E629285D690010605F ProfilePictureModifier.swift in Sources  = {isa = PBXBuildFile; fileRef = 42D821E529285D690010605F ProfilePictureModifier.swift ;};
+        42D821E829285D960010605F TextModifier.swift in Sources  = {isa = PBXBuildFile; fileRef = 42D821E729285D960010605F TextModifier.swift ;};
+        42D821EA29285DB90010605F TitleModifier.swift in Sources  = {isa = PBXBuildFile; fileRef = 42D821E929285DB90010605F TitleModifier.swift ;};
+        42D821EF29285E0A0010605F Color.swift in Sources  = {isa = PBXBuildFile; fileRef = 42D821EE29285E0A0010605F Color.swift ;};
 
 /* Begin PBXFileReference section */
         429FE97C2928D990006B4A64 /* KartenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KartenViewModel.swift; sourceTree = "<group>"; };
