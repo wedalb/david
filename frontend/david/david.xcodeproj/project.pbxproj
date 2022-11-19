@@ -8,17 +8,55 @@
 
 /* Begin PBXBuildFile section */
 		429FE99E2929220B006B4A64 /* davidApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE99D2929220B006B4A64 /* davidApp.swift */; };
-		429FE9A02929220B006B4A64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE99F2929220B006B4A64 /* ContentView.swift */; };
 		429FE9A22929220D006B4A64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 429FE9A12929220D006B4A64 /* Assets.xcassets */; };
 		429FE9A52929220D006B4A64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 429FE9A42929220D006B4A64 /* Preview Assets.xcassets */; };
+		429FE9AD29292422006B4A64 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9AC29292422006B4A64 /* AccountView.swift */; };
+		429FE9AF29292465006B4A64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9AE29292465006B4A64 /* AppDelegate.swift */; };
+		429FE9B12929249E006B4A64 /* KartenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9B02929249E006B4A64 /* KartenView.swift */; };
+		429FE9B3292924D0006B4A64 /* LeaderBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9B2292924D0006B4A64 /* LeaderBoardView.swift */; };
+		429FE9B52929250C006B4A64 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9B42929250C006B4A64 /* MainView.swift */; };
+		429FE9B729292527006B4A64 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9B629292527006B4A64 /* MapView.swift */; };
+		429FE9B929292542006B4A64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9B829292542006B4A64 /* SceneDelegate.swift */; };
+		429FE9BB2929255D006B4A64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9BA2929255D006B4A64 /* ViewController.swift */; };
+		429FE9BE2929257E006B4A64 /* ListComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9BD2929257E006B4A64 /* ListComponent.swift */; };
+		429FE9C029292595006B4A64 /* TextComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9BF29292595006B4A64 /* TextComponent.swift */; };
+		429FE9C3292925DF006B4A64 /* KartenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9C2292925DF006B4A64 /* KartenViewModel.swift */; };
+		429FE9C5292925F5006B4A64 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9C4292925F5006B4A64 /* Color.swift */; };
+		429FE9CB29292631006B4A64 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9CA29292631006B4A64 /* HTTPMethod.swift */; };
+		429FE9CD2929265E006B4A64 /* NoteStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9CC2929265E006B4A64 /* NoteStruct.swift */; };
+		429FE9CF29292674006B4A64 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9CE29292674006B4A64 /* UserSettings.swift */; };
+		429FE9D12929268E006B4A64 /* UserSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9D02929268E006B4A64 /* UserSettingsManager.swift */; };
+		429FE9D429292713006B4A64 /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9D329292713006B4A64 /* TitleModifier.swift */; };
+		429FE9D629292744006B4A64 /* DescriptionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9D529292744006B4A64 /* DescriptionModifier.swift */; };
+		429FE9D829292759006B4A64 /* TextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9D729292759006B4A64 /* TextModifier.swift */; };
+		429FE9DA29292775006B4A64 /* ProfilePictureModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9D929292775006B4A64 /* ProfilePictureModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		429FE99A2929220B006B4A64 /* david.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = david.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		429FE99D2929220B006B4A64 /* davidApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = davidApp.swift; sourceTree = "<group>"; };
-		429FE99F2929220B006B4A64 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		429FE9A12929220D006B4A64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		429FE9A42929220D006B4A64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		429FE9AC29292422006B4A64 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		429FE9AE29292465006B4A64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		429FE9B02929249E006B4A64 /* KartenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KartenView.swift; sourceTree = "<group>"; };
+		429FE9B2292924D0006B4A64 /* LeaderBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardView.swift; sourceTree = "<group>"; };
+		429FE9B42929250C006B4A64 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		429FE9B629292527006B4A64 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		429FE9B829292542006B4A64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		429FE9BA2929255D006B4A64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		429FE9BD2929257E006B4A64 /* ListComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListComponent.swift; sourceTree = "<group>"; };
+		429FE9BF29292595006B4A64 /* TextComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextComponent.swift; sourceTree = "<group>"; };
+		429FE9C2292925DF006B4A64 /* KartenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KartenViewModel.swift; sourceTree = "<group>"; };
+		429FE9C4292925F5006B4A64 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		429FE9CA29292631006B4A64 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		429FE9CC2929265E006B4A64 /* NoteStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteStruct.swift; sourceTree = "<group>"; };
+		429FE9CE29292674006B4A64 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		429FE9D02929268E006B4A64 /* UserSettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsManager.swift; sourceTree = "<group>"; };
+		429FE9D329292713006B4A64 /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
+		429FE9D529292744006B4A64 /* DescriptionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionModifier.swift; sourceTree = "<group>"; };
+		429FE9D729292759006B4A64 /* TextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifier.swift; sourceTree = "<group>"; };
+		429FE9D929292775006B4A64 /* ProfilePictureModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +89,12 @@
 		429FE99C2929220B006B4A64 /* david */ = {
 			isa = PBXGroup;
 			children = (
+				429FE9D229292705006B4A64 /* viewModifiers */,
+				429FE9C72929261E006B4A64 /* models */,
+				429FE9C629292603006B4A64 /* utils */,
+				429FE9C1292925CE006B4A64 /* viewModel */,
+				429FE9AB2929240C006B4A64 /* views */,
 				429FE99D2929220B006B4A64 /* davidApp.swift */,
-				429FE99F2929220B006B4A64 /* ContentView.swift */,
 				429FE9A12929220D006B4A64 /* Assets.xcassets */,
 				429FE9A32929220D006B4A64 /* Preview Content */,
 			);
@@ -65,6 +107,69 @@
 				429FE9A42929220D006B4A64 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		429FE9AB2929240C006B4A64 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				429FE9BC29292572006B4A64 /* components */,
+				429FE9AC29292422006B4A64 /* AccountView.swift */,
+				429FE9AE29292465006B4A64 /* AppDelegate.swift */,
+				429FE9B02929249E006B4A64 /* KartenView.swift */,
+				429FE9B2292924D0006B4A64 /* LeaderBoardView.swift */,
+				429FE9B42929250C006B4A64 /* MainView.swift */,
+				429FE9B629292527006B4A64 /* MapView.swift */,
+				429FE9B829292542006B4A64 /* SceneDelegate.swift */,
+				429FE9BA2929255D006B4A64 /* ViewController.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		429FE9BC29292572006B4A64 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				429FE9BD2929257E006B4A64 /* ListComponent.swift */,
+				429FE9BF29292595006B4A64 /* TextComponent.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		429FE9C1292925CE006B4A64 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				429FE9C2292925DF006B4A64 /* KartenViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		429FE9C629292603006B4A64 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				429FE9C4292925F5006B4A64 /* Color.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		429FE9C72929261E006B4A64 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				429FE9CA29292631006B4A64 /* HTTPMethod.swift */,
+				429FE9CC2929265E006B4A64 /* NoteStruct.swift */,
+				429FE9CE29292674006B4A64 /* UserSettings.swift */,
+				429FE9D02929268E006B4A64 /* UserSettingsManager.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		429FE9D229292705006B4A64 /* viewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				429FE9D329292713006B4A64 /* TitleModifier.swift */,
+				429FE9D529292744006B4A64 /* DescriptionModifier.swift */,
+				429FE9D729292759006B4A64 /* TextModifier.swift */,
+				429FE9D929292775006B4A64 /* ProfilePictureModifier.swift */,
+			);
+			path = viewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +242,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				429FE9A02929220B006B4A64 /* ContentView.swift in Sources */,
+				429FE9BB2929255D006B4A64 /* ViewController.swift in Sources */,
+				429FE9AF29292465006B4A64 /* AppDelegate.swift in Sources */,
+				429FE9B729292527006B4A64 /* MapView.swift in Sources */,
+				429FE9DA29292775006B4A64 /* ProfilePictureModifier.swift in Sources */,
+				429FE9C5292925F5006B4A64 /* Color.swift in Sources */,
+				429FE9BE2929257E006B4A64 /* ListComponent.swift in Sources */,
+				429FE9D829292759006B4A64 /* TextModifier.swift in Sources */,
+				429FE9B929292542006B4A64 /* SceneDelegate.swift in Sources */,
+				429FE9CD2929265E006B4A64 /* NoteStruct.swift in Sources */,
+				429FE9C3292925DF006B4A64 /* KartenViewModel.swift in Sources */,
+				429FE9B52929250C006B4A64 /* MainView.swift in Sources */,
+				429FE9C029292595006B4A64 /* TextComponent.swift in Sources */,
+				429FE9AD29292422006B4A64 /* AccountView.swift in Sources */,
+				429FE9B12929249E006B4A64 /* KartenView.swift in Sources */,
+				429FE9CB29292631006B4A64 /* HTTPMethod.swift in Sources */,
+				429FE9B3292924D0006B4A64 /* LeaderBoardView.swift in Sources */,
+				429FE9D629292744006B4A64 /* DescriptionModifier.swift in Sources */,
+				429FE9D12929268E006B4A64 /* UserSettingsManager.swift in Sources */,
+				429FE9D429292713006B4A64 /* TitleModifier.swift in Sources */,
 				429FE99E2929220B006B4A64 /* davidApp.swift in Sources */,
+				429FE9CF29292674006B4A64 /* UserSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
