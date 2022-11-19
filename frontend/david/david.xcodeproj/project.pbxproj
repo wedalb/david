@@ -12,10 +12,9 @@
 		429FE9A52929220D006B4A64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 429FE9A42929220D006B4A64 /* Preview Assets.xcassets */; };
 		429FE9AD29292422006B4A64 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9AC29292422006B4A64 /* AccountView.swift */; };
 		429FE9AF29292465006B4A64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9AE29292465006B4A64 /* AppDelegate.swift */; };
-		429FE9B12929249E006B4A64 /* KartenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9B02929249E006B4A64 /* KartenView.swift */; };
+		429FE9B12929249E006B4A64 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9B02929249E006B4A64 /* MapView.swift */; };
 		429FE9B3292924D0006B4A64 /* LeaderBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9B2292924D0006B4A64 /* LeaderBoardView.swift */; };
 		429FE9B52929250C006B4A64 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9B42929250C006B4A64 /* MainView.swift */; };
-		429FE9B729292527006B4A64 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9B629292527006B4A64 /* MapView.swift */; };
 		429FE9B929292542006B4A64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9B829292542006B4A64 /* SceneDelegate.swift */; };
 		429FE9BB2929255D006B4A64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9BA2929255D006B4A64 /* ViewController.swift */; };
 		429FE9BE2929257E006B4A64 /* ListComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9BD2929257E006B4A64 /* ListComponent.swift */; };
@@ -41,10 +40,9 @@
 		429FE9A42929220D006B4A64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		429FE9AC29292422006B4A64 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		429FE9AE29292465006B4A64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		429FE9B02929249E006B4A64 /* KartenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KartenView.swift; sourceTree = "<group>"; };
+		429FE9B02929249E006B4A64 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		429FE9B2292924D0006B4A64 /* LeaderBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardView.swift; sourceTree = "<group>"; };
 		429FE9B42929250C006B4A64 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		429FE9B629292527006B4A64 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		429FE9B829292542006B4A64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		429FE9BA2929255D006B4A64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		429FE9BD2929257E006B4A64 /* ListComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListComponent.swift; sourceTree = "<group>"; };
@@ -238,8 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				429FE9DD29293B1D006B4A64 /* stickyNotes */,
-				429FE9B02929249E006B4A64 /* KartenView.swift */,
-				429FE9B629292527006B4A64 /* MapView.swift */,
+				429FE9B02929249E006B4A64 /* MapView.swift */,
 			);
 			path = map;
 			sourceTree = "<group>";
@@ -324,7 +321,6 @@
 			files = (
 				429FE9BB2929255D006B4A64 /* ViewController.swift in Sources */,
 				429FE9AF29292465006B4A64 /* AppDelegate.swift in Sources */,
-				429FE9B729292527006B4A64 /* MapView.swift in Sources */,
 				429FE9DA29292775006B4A64 /* ProfilePictureModifier.swift in Sources */,
 				429FE9C5292925F5006B4A64 /* Color.swift in Sources */,
 				429FE9BE2929257E006B4A64 /* ListComponent.swift in Sources */,
@@ -335,7 +331,7 @@
 				429FE9B52929250C006B4A64 /* MainView.swift in Sources */,
 				429FE9C029292595006B4A64 /* TextComponent.swift in Sources */,
 				429FE9AD29292422006B4A64 /* AccountView.swift in Sources */,
-				429FE9B12929249E006B4A64 /* KartenView.swift in Sources */,
+				429FE9B12929249E006B4A64 /* MapView.swift in Sources */,
 				429FE9CB29292631006B4A64 /* HTTPMethod.swift in Sources */,
 				429FE9B3292924D0006B4A64 /* LeaderBoardView.swift in Sources */,
 				429FE9D629292744006B4A64 /* DescriptionModifier.swift in Sources */,

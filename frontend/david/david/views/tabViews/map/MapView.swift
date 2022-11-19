@@ -1,30 +1,61 @@
 //
-//  MapView.swift
-//  david
+//  ContentView.swift
+//  hackaTUM_UserLocation
 //
-//  Created by Heidi Albarazi on 19.11.22.
+//  Created by Hannes Wagner on 19.11.22.
 //
 
-import SwiftUI
-// 1.
 import MapKit
+import SwiftUI
+
+
+struct Note: Identifiable {
+    let id = UUID()
+    let name: String
+    let coordinate: CLLocationCoordinate2D
+}
 
 struct MapView: View {
-    // 2.
-    @State private var region = MKCoordinateRegion(
-                center: CLLocationCoordinate2D(
-                    latitude: 40.83834587046632,
-                    longitude: 14.254053016537693),
-                span: MKCoordinateSpan(
-                    latitudeDelta: 0.03,
-                    longitudeDelta: 0.03)
-                )
+    @StateObject private var viewModel = KartenViewModel()
+    
+    ///Showing Sheet
+    @State private var showingSheet = false
+    
 
+    
     var body: some View {
-        // 3.
-        Map(coordinateRegion: $region)
-            .edgesIgnoringSafeArea(.all)
+//        Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
+        Map(coordinateRegion: $viewModel.region,showsUserLocation: true, annotationItems: annotations){
+//            MapPin(coordinate: $0.coordinate)
+            MapAnnotation(
+               coordinate: $0.coordinate,
+               content: {
+                  Image("StickyNote")
+                       .frame(width: 45, height: 45)
+                       .clipped()
+                       .shadow(radius: 5.0)
+                       .onTapGesture {
+                           showingSheet.toggle()
+                       }
+                       .sheet(isPresented: $showingSheet) {
+                           StickyNoteSheetView()
+                               }
+//                  Text(Note.name)
+               }
+            )
+        }
+            .ignoresSafeArea()
+            .accentColor(Color(.systemPink))
+            .onAppear {
+                viewModel.checkIfLocationServicesIsEnabled()
+            }
     }
+    
+    let annotations = [
+        Note(name: "Siegestor", coordinate: CLLocationCoordinate2D(latitude: 48.152337, longitude: 11.582165)),
+        Note(name: "Alte Pinakothek", coordinate: CLLocationCoordinate2D(latitude: 48.148271, longitude: 11.569977)),
+    ]
+    
 }
 
 struct MapView_Previews: PreviewProvider {
@@ -32,3 +63,4 @@ struct MapView_Previews: PreviewProvider {
         MapView()
     }
 }
+

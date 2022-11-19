@@ -25,7 +25,7 @@ struct StickyNote: View {
                 .opacity(0.7)
             Spacer()
         }
-        .foregroundColor(.white)
+        .foregroundColor(Color.clear)
         .padding(30)
         .frame(width: 260, height: 310)
         .background(Color.accentColor)

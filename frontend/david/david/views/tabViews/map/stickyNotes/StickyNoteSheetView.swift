@@ -23,6 +23,7 @@ struct StickyNoteSheetView: View {
             .padding(20)
             .padding(.bottom, 10)
         }
+        .background(Color.clear)
     }
 }
 
