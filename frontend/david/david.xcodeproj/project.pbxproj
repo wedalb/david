@@ -30,6 +30,8 @@
 		429FE9D629292744006B4A64 /* DescriptionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9D529292744006B4A64 /* DescriptionModifier.swift */; };
 		429FE9D829292759006B4A64 /* TextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9D729292759006B4A64 /* TextModifier.swift */; };
 		429FE9DA29292775006B4A64 /* ProfilePictureModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9D929292775006B4A64 /* ProfilePictureModifier.swift */; };
+		429FE9DC2929385F006B4A64 /* StickyNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9DB2929385E006B4A64 /* StickyNoteView.swift */; };
+		429FE9DF29293B2E006B4A64 /* VCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9DE29293B2E006B4A64 /* VCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,8 @@
 		429FE9D529292744006B4A64 /* DescriptionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionModifier.swift; sourceTree = "<group>"; };
 		429FE9D729292759006B4A64 /* TextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifier.swift; sourceTree = "<group>"; };
 		429FE9D929292775006B4A64 /* ProfilePictureModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureModifier.swift; sourceTree = "<group>"; };
+		429FE9DB2929385E006B4A64 /* StickyNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyNoteView.swift; sourceTree = "<group>"; };
+		429FE9DE29293B2E006B4A64 /* VCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 		429FE9AB2929240C006B4A64 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				429FE9DD29293B1D006B4A64 /* stickyNotes */,
 				429FE9BC29292572006B4A64 /* components */,
 				429FE9AC29292422006B4A64 /* AccountView.swift */,
 				429FE9AE29292465006B4A64 /* AppDelegate.swift */,
@@ -170,6 +175,15 @@
 				429FE9D929292775006B4A64 /* ProfilePictureModifier.swift */,
 			);
 			path = viewModifiers;
+			sourceTree = "<group>";
+		};
+		429FE9DD29293B1D006B4A64 /* stickyNotes */ = {
+			isa = PBXGroup;
+			children = (
+				429FE9DB2929385E006B4A64 /* StickyNoteView.swift */,
+				429FE9DE29293B2E006B4A64 /* VCard.swift */,
+			);
+			path = stickyNotes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +265,7 @@
 				429FE9D829292759006B4A64 /* TextModifier.swift in Sources */,
 				429FE9B929292542006B4A64 /* SceneDelegate.swift in Sources */,
 				429FE9CD2929265E006B4A64 /* NoteStruct.swift in Sources */,
+				429FE9DC2929385F006B4A64 /* StickyNoteView.swift in Sources */,
 				429FE9C3292925DF006B4A64 /* KartenViewModel.swift in Sources */,
 				429FE9B52929250C006B4A64 /* MainView.swift in Sources */,
 				429FE9C029292595006B4A64 /* TextComponent.swift in Sources */,
@@ -262,6 +277,7 @@
 				429FE9D12929268E006B4A64 /* UserSettingsManager.swift in Sources */,
 				429FE9D429292713006B4A64 /* TitleModifier.swift in Sources */,
 				429FE99E2929220B006B4A64 /* davidApp.swift in Sources */,
+				429FE9DF29293B2E006B4A64 /* VCard.swift in Sources */,
 				429FE9CF29292674006B4A64 /* UserSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
