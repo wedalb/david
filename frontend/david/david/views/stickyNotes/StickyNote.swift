@@ -38,6 +38,6 @@ struct StickyNote: View {
 
 struct VCard_Previews: PreviewProvider {
     static var previews: some View {
-        VCard(note: NoteStruct(note_title: "Mein Lieblingsort", note_description: "Hier ist mein lieblingsort", note_location_latitude: "43.234524", note_location_longitude: "23.234502", note_category: "happy", note_created_at: "23.06.2000", note_author: "Fish", note_building: "Museum"))
+        StickyNote(note: NoteStruct(note_title: "Mein Lieblingsort", note_description: "Hier ist mein lieblingsort", note_location_latitude: "43.234524", note_location_longitude: "23.234502", note_category: "happy", note_created_at: "23.06.2000", note_author: "Fish", note_building: "Museum"))
     }
 }

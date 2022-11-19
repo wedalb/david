@@ -38,7 +38,7 @@ struct KartenView: View {
                            showingSheet.toggle()
                        }
                        .sheet(isPresented: $showingSheet) {
-                                   SheetView()
+                           StickyNoteSheetView()
                                }
 //                  Text(Note.name)
                }
@@ -64,18 +64,3 @@ struct KartenView_Previews: PreviewProvider {
     }
 }
 
-
-///The Sheet
-struct SheetView: View {
-    @Environment(\.dismiss) var dismiss
-
-    var body: some View {
-        Button("Press to dismiss") {
-            dismiss()
-        }
-        .font(.title)
-        .padding()
-        .background(.black)
-
-    }
-}

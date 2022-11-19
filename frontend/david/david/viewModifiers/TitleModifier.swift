@@ -16,7 +16,6 @@ public struct TitleModifier: ViewModifier {
             .bold()
             .foregroundColor(.textColor)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(10)
             
     }
 }

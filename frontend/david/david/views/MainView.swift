@@ -12,7 +12,7 @@ struct MainView: View {
         TabView {
             
             //LeaderBoardView()
-            StickyNoteView()
+            LeaderBoardView()
                 .tabItem {
                     Label("Leaderboard", systemImage: "list.number")
                 }
