@@ -19,3 +19,15 @@ public struct TitleModifier: ViewModifier {
             
     }
 }
+
+/// Modifies the title of a section
+public struct TitleModifierNotes: ViewModifier {
+    public func body(content: Content) -> some View  {
+        content
+            .font(Font.custom("KohSantepheap-Regular", size: 20.0))
+            .bold()
+            .foregroundColor(.black)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            
+    }
+}

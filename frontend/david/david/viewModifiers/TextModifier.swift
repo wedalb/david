@@ -13,8 +13,18 @@ import SwiftUI
 public struct TextModifier: ViewModifier {
     public func body(content: Content) -> some View  {
         content
-            .font(Font.custom("KohSantepheap-Regular", size: 20.0))
+            .font(Font.custom("KohSantepheap-Regular", size: 15.0))
             .foregroundColor(.textColor)
+            
+    }
+}
+
+/// Modifies the standard Text
+public struct TextModifierNotes: ViewModifier {
+    public func body(content: Content) -> some View  {
+        content
+            .font(Font.custom("KohSantepheap-Regular", size: 15.0))
+            .foregroundColor(.black)
             
     }
 }

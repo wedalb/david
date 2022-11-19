@@ -9,8 +9,8 @@
 import Foundation
 
 enum HTTPMethod: String {
-    case GET
-    case POST
-    case PUT
-    case DEL
+    case GET = "GET"
+    case POST = "POST"
+    case PUT = "PUT"
+    case DEL = "DEL"
 }

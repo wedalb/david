@@ -21,11 +21,14 @@ enum MapDetails {
 
 final class KartenViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     
-        @Published var region = MKCoordinateRegion(center: MapDetails.startingLocation,
+    /// Position und wie weit die View ranzoomt zu Beginn
+    @Published var region = MKCoordinateRegion(center: MapDetails.startingLocation,
                                                    span: MapDetails.defaultSpan)
     
     var locationManager: CLLocationManager?
     
+    
+    /// Checks if Locations are enabled
     func checkIfLocationServicesIsEnabled() {
         if CLLocationManager.locationServicesEnabled() {
             locationManager = CLLocationManager()
@@ -34,6 +37,8 @@ final class KartenViewModel: NSObject, ObservableObject, CLLocationManagerDelega
             print("Show an alert letting them know this is off and to go turn it on.")
         }
     }
+    
+    /// Checks wether the Location was authorized
     private func checkLocationAuthorization() {
         guard let locationManager = locationManager else { return }
         
@@ -56,6 +61,14 @@ final class KartenViewModel: NSObject, ObservableObject, CLLocationManagerDelega
 
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         checkLocationAuthorization()
+    }
+    
+    
+    
+    
+    /// returns a set of nearby notes: This function tells you what notes are nearby
+    func loadNearbyNotes() -> Set<NoteStruct> {
+        return Set()
     }
     
 }
