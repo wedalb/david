@@ -31,6 +31,7 @@
 		429FE9DA29292775006B4A64 /* ProfilePictureModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9D929292775006B4A64 /* ProfilePictureModifier.swift */; };
 		429FE9DF29293B2E006B4A64 /* StickyNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9DE29293B2E006B4A64 /* StickyNote.swift */; };
 		429FE9E829294895006B4A64 /* StickyNoteSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9E729294895006B4A64 /* StickyNoteSheetView.swift */; };
+		429FE9EF292950B6006B4A64 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9EE292950B6006B4A64 /* UIScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		429FE9E429293F9A006B4A64 /* KohSantepheap-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KohSantepheap-Regular.ttf"; sourceTree = "<group>"; };
 		429FE9E529293F9B006B4A64 /* KohSantepheap-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KohSantepheap-Thin.ttf"; sourceTree = "<group>"; };
 		429FE9E729294895006B4A64 /* StickyNoteSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyNoteSheetView.swift; sourceTree = "<group>"; };
+		429FE9EE292950B6006B4A64 /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				429FE9C4292925F5006B4A64 /* Color.swift */,
+				429FE9EE292950B6006B4A64 /* UIScreen.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				429FE9D829292759006B4A64 /* TextModifier.swift in Sources */,
 				429FE9B929292542006B4A64 /* SceneDelegate.swift in Sources */,
 				429FE9CD2929265E006B4A64 /* NoteStruct.swift in Sources */,
+				429FE9EF292950B6006B4A64 /* UIScreen.swift in Sources */,
 				429FE9C3292925DF006B4A64 /* KartenViewModel.swift in Sources */,
 				429FE9B52929250C006B4A64 /* MainView.swift in Sources */,
 				429FE9C029292595006B4A64 /* TextComponent.swift in Sources */,
