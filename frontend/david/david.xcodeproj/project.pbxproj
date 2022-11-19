@@ -78,6 +78,8 @@
 		42D821C5292859D50010605F /* david */ = {
 			isa = PBXGroup;
 			children = (
+				42D821F6292864A90010605F /* model */,
+				42D821F52928649D0010605F /* viewModel */,
 				42D821ED29285DFD0010605F /* utils */,
 				42D821EB29285DCF0010605F /* resources */,
 				42D821E229285D350010605F /* viewModifiers */,
@@ -156,6 +158,20 @@
 				42D821EE29285E0A0010605F /* Color.swift */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		42D821F52928649D0010605F /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		42D821F6292864A90010605F /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
