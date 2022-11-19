@@ -10,7 +10,7 @@ import SwiftUI
 import CoreLocation
 
 /// A struct for a Note that a User can create. This structure also follows the same structure as the Database table
-struct Note: Decodable {
+struct NoteStruct: Decodable {
     
     let id,
         note_title,

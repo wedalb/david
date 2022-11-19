@@ -9,7 +9,8 @@ import SwiftUI
 
 struct AccountView: View {
 
-    @State private var notes: String = ""
+    @State private var firstName: String = ""
+
     var body: some View {
         VStack{
            
@@ -17,8 +18,23 @@ struct AccountView: View {
                 .profilePictureModifier()
                 .padding(20.0)
             
+            Divider()
+            Text("My Author Name:").modifier(TitleModifier())
             
-            TextComponent(text: "Firstname Lastname", description: "Username")
+                TextField(text: $firstName, prompt: Text("Max")) {
+                    Text("First Name")
+                }
+                TextField(
+                    "User name (email address)",
+                    text: $firstName
+                )
+                .onSubmit {
+                    UserSettingsManager.settings.addFirstName(firstName: firstName)
+                }
+                .textInputAutocapitalization(.never)
+                .disableAutocorrection(true)
+                .border(.secondary)
+
             
             Divider()
             Spacer()

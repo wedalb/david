@@ -20,7 +20,7 @@ public class UserSettingsManager: ObservableObject {
 
     private var userSettings: UserSettings
     // Use this for saving settings
-    static let userSettingsManager = UserSettingsManager()
+    static let settings = UserSettingsManager()
 
 
     init() {
@@ -41,22 +41,27 @@ public class UserSettingsManager: ObservableObject {
 
     }
     
-    /// A function to store a name of a user on the phone
-    public func addFirstName(){
-        let defaults = UserDefaults.standard
-        defaults.set(userSettings.firstName, forKey: "firstName")
+    /// A function to store the first name of a user on the phone
+    public func addFirstName(firstName: String){
+        userSettings.firstName = firstName
+        self.saveSettings()
     }
-    
+    /// A function to store the last name of a user on the phone
+    public func addLastName(lastName: String){
+        userSettings.lastName = lastName
+        self.saveSettings()
+    }
     
 
     /// adds an category preference  to the list of category preferences
-    public func addAllergy(category: String) {
-        userSettings.categoryPreference.insert(String)
+    public func addCategory(category: String) {
+        userSettings.categoryPreference.insert(category)
+        self.saveSettings()
     }
 
 
     /// This is a basic Getter function. This function returns your settings
-    public func getPreferences() -> UserSettings{
+    public func getSettings() -> UserSettings{
         return userSettings
     }
 }
