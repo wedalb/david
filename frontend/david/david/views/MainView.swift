@@ -18,7 +18,7 @@ struct MainView: View {
                 }
 
             ZStack {
-                MapView()
+                MapButton()
                 Rectangle()
                     .frame(height: 0.5)
                     .foregroundColor(Color.clear)

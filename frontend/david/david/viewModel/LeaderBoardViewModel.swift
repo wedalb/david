@@ -7,6 +7,26 @@ class LeaderBoardViewModel : ObservableObject {
     @Published var hasError = false
 
     
+    @Published var sortByTitleDescending = false
+    
+    var sortedNotes: [NoteStruct] {
+        if sortByTitleDescending {
+            return notes.sorted { (lhs: NoteStruct, rhs: NoteStruct) -> Bool in
+                return lhs.note_title > rhs.note_title
+            }
+        } else {
+            return notes.sorted { (lhs: NoteStruct, rhs: NoteStruct) -> Bool in
+                return lhs.note_title < rhs.note_title
+            }
+        }
+    }
+    
+    func setByTitleDescending(isDescending: Bool) {
+        sortByTitleDescending = isDescending
+    }
+    
+    
+    
     // A function to load our notes when we re in the maps view
     func load() async {
         DispatchQueue.main.async {
