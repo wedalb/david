@@ -23,7 +23,7 @@ struct LeaderBoardView: View {
             if model.hasError {
                 VStack {
                     Spacer()
-                    LottieView()
+                    LottieView(name: "ErrorMessageLottie")
                     Text("An Error has occurred.")
                         .modifier(TitleModifierNotes())
                         .foregroundColor(.accentColor)
@@ -45,7 +45,7 @@ struct LeaderBoardView: View {
                     }.padding()
                     Spacer()
                     Spacer()
-                }
+                } .navigationTitle("Leader Board")
                 
             } else {
                 List(model.sortedNotes, id: \.id){ note in
