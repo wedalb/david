@@ -21,7 +21,21 @@ struct KartenView: View {
     var body: some View {
 //        Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
         Map(coordinateRegion: $viewModel.region,showsUserLocation: true, annotationItems: annotations){
-            MapPin(coordinate: $0.coordinate)
+//            MapPin(coordinate: $0.coordinate)
+            MapAnnotation(
+               coordinate: $0.coordinate,
+               content: {
+                  Image("StickyNote")
+                       .frame(width: 45, height: 45)
+                       .clipped()
+                       .shadow(radius: 5.0)
+                       .onTapGesture {
+                           print("hello there")
+                       }
+                   
+//                  Text(Note.name)
+               }
+            )
         }
             .ignoresSafeArea()
             .accentColor(Color(.systemPink))
