@@ -12,7 +12,6 @@
 		429FE9812928DEF5006B4A64 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9802928DEF5006B4A64 /* HTTPMethod.swift */; };
 		429FE9862928E366006B4A64 /* DavidClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE9852928E366006B4A64 /* DavidClient.swift */; };
 		42D821C7292859D50010605F /* davidApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D821C6292859D50010605F /* davidApp.swift */; };
-		42D821C9292859D50010605F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D821C8292859D50010605F /* ContentView.swift */; };
 		42D821CB292859D70010605F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D821CA292859D70010605F /* Assets.xcassets */; };
 		42D821CE292859D70010605F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D821CD292859D70010605F /* Preview Assets.xcassets */; };
 		42D821D629285ADE0010605F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D821D529285ADE0010605F /* MainView.swift */; };
@@ -35,7 +34,6 @@
 		429FE9852928E366006B4A64 /* DavidClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DavidClient.swift; sourceTree = "<group>"; };
 		42D821C3292859D50010605F /* david.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = david.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D821C6292859D50010605F /* davidApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = davidApp.swift; sourceTree = "<group>"; };
-		42D821C8292859D50010605F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		42D821CA292859D70010605F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42D821CD292859D70010605F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		42D821D529285ADE0010605F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 				42D821E229285D350010605F /* viewModifiers */,
 				42D821D429285AB30010605F /* views */,
 				42D821C6292859D50010605F /* davidApp.swift */,
-				42D821C8292859D50010605F /* ContentView.swift */,
 				42D821CA292859D70010605F /* Assets.xcassets */,
 				42D821CC292859D70010605F /* Preview Content */,
 			);
@@ -269,7 +266,6 @@
 				42D821DC29285B360010605F /* MapView.swift in Sources */,
 				42D821EA29285DB90010605F /* TitleModifier.swift in Sources */,
 				42D821E629285D690010605F /* ProfilePictureModifier.swift in Sources */,
-				42D821C9292859D50010605F /* ContentView.swift in Sources */,
 				42D821D629285ADE0010605F /* MainView.swift in Sources */,
 				429FE97D2928D990006B4A64 /* KartenViewModel.swift in Sources */,
 				42D821E829285D960010605F /* TextModifier.swift in Sources */,

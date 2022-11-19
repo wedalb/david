@@ -14,9 +14,9 @@
 import MapKit
 
 enum MapDetails {
-    static let startingLocation = CLLocationCoordinate2D(latitude: 37.123322, longitude: -121.123890)
+    static let startingLocation = CLLocationCoordinate2D(latitude: 48.150297, longitude: 11.575974)
     static let defaultSpan = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
-                                                         
+    
 }
 
 final class KartenViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
