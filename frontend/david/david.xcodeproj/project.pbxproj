@@ -123,24 +123,20 @@
 			isa = PBXGroup;
 			children = (
 				429FE9E9292949D0006B4A64 /* unused */,
-				429FE9BC29292572006B4A64 /* components */,
-				429FE9DD29293B1D006B4A64 /* stickyNotes */,
-				429FE9AC29292422006B4A64 /* AccountView.swift */,
-				429FE9B02929249E006B4A64 /* KartenView.swift */,
-				429FE9B2292924D0006B4A64 /* LeaderBoardView.swift */,
+				429FE9BC29292572006B4A64 /* uiComponents */,
+				429FE9EA29294BF9006B4A64 /* tabViews */,
 				429FE9B42929250C006B4A64 /* MainView.swift */,
-				429FE9B629292527006B4A64 /* MapView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
 		};
-		429FE9BC29292572006B4A64 /* components */ = {
+		429FE9BC29292572006B4A64 /* uiComponents */ = {
 			isa = PBXGroup;
 			children = (
 				429FE9BD2929257E006B4A64 /* ListComponent.swift */,
 				429FE9BF29292595006B4A64 /* TextComponent.swift */,
 			);
-			path = components;
+			path = uiComponents;
 			sourceTree = "<group>";
 		};
 		429FE9C1292925CE006B4A64 /* viewModel */ = {
@@ -218,6 +214,42 @@
 				429FE9B829292542006B4A64 /* SceneDelegate.swift */,
 			);
 			path = unused;
+			sourceTree = "<group>";
+		};
+		429FE9EA29294BF9006B4A64 /* tabViews */ = {
+			isa = PBXGroup;
+			children = (
+				429FE9ED29294C26006B4A64 /* leaderBoard */,
+				429FE9EC29294C1C006B4A64 /* map */,
+				429FE9EB29294C14006B4A64 /* account */,
+			);
+			path = tabViews;
+			sourceTree = "<group>";
+		};
+		429FE9EB29294C14006B4A64 /* account */ = {
+			isa = PBXGroup;
+			children = (
+				429FE9AC29292422006B4A64 /* AccountView.swift */,
+			);
+			path = account;
+			sourceTree = "<group>";
+		};
+		429FE9EC29294C1C006B4A64 /* map */ = {
+			isa = PBXGroup;
+			children = (
+				429FE9DD29293B1D006B4A64 /* stickyNotes */,
+				429FE9B02929249E006B4A64 /* KartenView.swift */,
+				429FE9B629292527006B4A64 /* MapView.swift */,
+			);
+			path = map;
+			sourceTree = "<group>";
+		};
+		429FE9ED29294C26006B4A64 /* leaderBoard */ = {
+			isa = PBXGroup;
+			children = (
+				429FE9B2292924D0006B4A64 /* LeaderBoardView.swift */,
+			);
+			path = leaderBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
