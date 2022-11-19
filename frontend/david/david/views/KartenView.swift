@@ -18,6 +18,11 @@ struct Note: Identifiable {
 struct KartenView: View {
     @StateObject private var viewModel = KartenViewModel()
     
+    ///Showing Sheet
+    @State private var showingSheet = false
+    
+
+    
     var body: some View {
 //        Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
         Map(coordinateRegion: $viewModel.region,showsUserLocation: true, annotationItems: annotations){
@@ -30,9 +35,11 @@ struct KartenView: View {
                        .clipped()
                        .shadow(radius: 5.0)
                        .onTapGesture {
-                           print("hello there")
+                           showingSheet.toggle()
                        }
-                   
+                       .sheet(isPresented: $showingSheet) {
+                                   SheetView()
+                               }
 //                  Text(Note.name)
                }
             )
@@ -54,5 +61,21 @@ struct KartenView: View {
 struct KartenView_Previews: PreviewProvider {
     static var previews: some View {
         KartenView()
+    }
+}
+
+
+///The Sheet
+struct SheetView: View {
+    @Environment(\.dismiss) var dismiss
+
+    var body: some View {
+        Button("Press to dismiss") {
+            dismiss()
+        }
+        .font(.title)
+        .padding()
+        .background(.black)
+
     }
 }
