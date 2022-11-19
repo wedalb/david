@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		429FE97B2928D546006B4A64 /* RandomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE97A2928D546006B4A64 /* RandomView.swift */; };
 		42D821C7292859D50010605F /* davidApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D821C6292859D50010605F /* davidApp.swift */; };
 		42D821C9292859D50010605F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D821C8292859D50010605F /* ContentView.swift */; };
 		42D821CB292859D70010605F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D821CA292859D70010605F /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		429FE97A2928D546006B4A64 /* RandomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomView.swift; sourceTree = "<group>"; };
 		42D821C3292859D50010605F /* david.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = david.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D821C6292859D50010605F /* davidApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = davidApp.swift; sourceTree = "<group>"; };
 		42D821C8292859D50010605F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				42D821D729285B1D0010605F /* AccountView.swift */,
 				42D821D929285B2D0010605F /* LeaderBoardView.swift */,
 				42D821DB29285B360010605F /* MapView.swift */,
+				429FE97A2928D546006B4A64 /* RandomView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				42D821E629285D690010605F /* ProfilePictureModifier.swift in Sources */,
 				42D821C9292859D50010605F /* ContentView.swift in Sources */,
 				42D821D629285ADE0010605F /* MainView.swift in Sources */,
+				429FE97B2928D546006B4A64 /* RandomView.swift in Sources */,
 				42D821E829285D960010605F /* TextModifier.swift in Sources */,
 				42D821EF29285E0A0010605F /* Color.swift in Sources */,
 				42D821C7292859D50010605F /* davidApp.swift in Sources */,
