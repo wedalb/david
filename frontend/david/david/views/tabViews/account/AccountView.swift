@@ -24,12 +24,13 @@ struct AccountView: View {
                 TextField(text: $firstName, prompt: Text("Max")) {
                     Text("First Name")
                 }
-                TextField(
-                    "User name (email address)",
-                    text: $firstName
-                )
-                .onSubmit {
-                    UserSettingsManager.settings.addFirstName(firstName: firstName)
+            TextEditor(text: $firstName)
+                .font(.body)
+                .padding()
+                .padding(.top, 20)
+                .onChange(of: firstName) { value in
+           /*         UserSettingsManager.settings.addFirstName(firstName: firstName)
+                    UserSettingsManager.settings.saveSettings() */
                 }
                 .textInputAutocapitalization(.never)
                 .disableAutocorrection(true)

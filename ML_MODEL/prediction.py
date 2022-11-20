@@ -2,11 +2,12 @@ import pickle
 from nltk.corpus import stopwords
 import re
 from nltk.stem.lancaster import LancasterStemmer
+import nltk
+nltk.download('stopwords')
 ps = LancasterStemmer()
 filename = 'movie-genre-mnb-model.pkl'
 classifier = pickle.load(open(filename, 'rb'))
 cv = pickle.load(open('cv-transform.pkl','rb'))
-
 def my_pred(sample_script):
     sample_script = re.sub(pattern='[^a-zA-Z]',repl=' ', string=sample_script)
     sample_script = sample_script.lower()
@@ -19,7 +20,7 @@ def my_pred(sample_script):
     if(pred==4):
      pred = pred -1
     movie_genre = ['crime','fantasy','history','horror','psychology','romance','science','sports','thriller','travel']
-    return movie_genre[pred]
+    return movie_genre[pred] 
 
 sample_text = '''Whilst investigating the death of a local swordsman, a stable private detective called Raymond Vader uncovers a legend about a supernaturally-cursed, tiny ruler circulating throughout Wales. As soon as anyone uses the ruler, he or she has exactly 28 days left to live.
 

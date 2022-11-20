@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		429F5F9D29299CCB001443AE /* LoadingNotesLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 429F5F9C29299CCB001443AE /* LoadingNotesLottie.json */; };
+		429F5F9F29299DCA001443AE /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429F5F9E29299DCA001443AE /* LoadingScreen.swift */; };
+		429F5FA12929A253001443AE /* CreateNoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429F5FA02929A253001443AE /* CreateNoteViewModel.swift */; };
 		429FE99E2929220B006B4A64 /* davidApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FE99D2929220B006B4A64 /* davidApp.swift */; };
 		429FE9A22929220D006B4A64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 429FE9A12929220D006B4A64 /* Assets.xcassets */; };
 		429FE9A52929220D006B4A64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 429FE9A42929220D006B4A64 /* Preview Assets.xcassets */; };
@@ -49,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		429F5F9C29299CCB001443AE /* LoadingNotesLottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LoadingNotesLottie.json; sourceTree = "<group>"; };
+		429F5F9E29299DCA001443AE /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
+		429F5FA02929A253001443AE /* CreateNoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteViewModel.swift; sourceTree = "<group>"; };
 		429FE99A2929220B006B4A64 /* david.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = david.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		429FE99D2929220B006B4A64 /* davidApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = davidApp.swift; sourceTree = "<group>"; };
 		429FE9A12929220D006B4A64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 				429FE9BC29292572006B4A64 /* uiComponents */,
 				429FE9EA29294BF9006B4A64 /* tabViews */,
 				429FE9B42929250C006B4A64 /* MainView.swift */,
+				429F5F9E29299DCA001443AE /* LoadingScreen.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 				429FE9C2292925DF006B4A64 /* KartenViewModel.swift */,
 				429FE9F6292970EB006B4A64 /* MapViewModel.swift */,
 				429FE9F82929735A006B4A64 /* LeaderBoardViewModel.swift */,
+				429F5FA02929A253001443AE /* CreateNoteViewModel.swift */,
 			);
 			path = viewModel;
 			sourceTree = "<group>";
@@ -398,6 +404,7 @@
 				429FE9F92929735A006B4A64 /* LeaderBoardViewModel.swift in Sources */,
 				429FE9CD2929265E006B4A64 /* NoteStruct.swift in Sources */,
 				6BA374BF2929A5DD00557FD6 /* UserLocationBack.swift in Sources */,
+				429F5F9F29299DCA001443AE /* LoadingScreen.swift in Sources */,
 				429FE9EF292950B6006B4A64 /* UIScreen.swift in Sources */,
 				429FE9C3292925DF006B4A64 /* KartenViewModel.swift in Sources */,
 				429FE9B52929250C006B4A64 /* MainView.swift in Sources */,
@@ -406,6 +413,7 @@
 				429FE9AD29292422006B4A64 /* AccountView.swift in Sources */,
 				429FE9B12929249E006B4A64 /* MapView.swift in Sources */,
 				6BA374B729297AC800557FD6 /* CreateNoteView.swift in Sources */,
+				429F5FA12929A253001443AE /* CreateNoteViewModel.swift in Sources */,
 				429FE9F329296E45006B4A64 /* RequestHandler.swift in Sources */,
 				429FE9CB29292631006B4A64 /* HTTPMethod.swift in Sources */,
 				6BD2903C29294E9E003FF0B1 /* Map_2.swift in Sources */,
