@@ -20,13 +20,18 @@ struct LeaderBoardView: View {
     
     var body: some View {
         NavigationView {
+            
+            // if there is some kind of connectionerror
             if model.hasError {
-                VStack {
+                VStack(alignment: HorizontalAlignment.center) {
                     Spacer()
                     LottieView(name: "ErrorMessageLottie")
                     Text("An Error has occurred.")
-                        .modifier(TitleModifierNotes())
-                        .foregroundColor(.accentColor)
+                        .font(Font.custom("KohSantepheap-Regular", size: 20.0))
+                        .bold()
+                        .foregroundColor(.red)
+                    Spacer()
+                    Spacer()
                     Button(action: {
                         Task{
                             await model.load()
@@ -34,19 +39,20 @@ struct LeaderBoardView: View {
                     }){
                         HStack {
                             Image(systemName: "goforward")
-                                .font(.title)
-                            Text("Try Again! ")
-                                .fontWeight(.semibold)
-                                .font(.title2)
+                                .font(.caption)
+                            Text("Try Connecting Again!")
+                                .modifier(TextModifierNotes())
                         }
                         .padding()
                         .background(Color.accentColor)
                         .cornerRadius(40)
                     }.padding()
                     Spacer()
-                    Spacer()
+                    
                 } .navigationTitle("Leader Board")
                 
+                
+                // no connection error
             } else {
                 List(model.sortedNotes, id: \.id){ note in
                     GroupBox(label: Text(note.note_title), content: {

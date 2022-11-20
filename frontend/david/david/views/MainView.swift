@@ -8,20 +8,30 @@
 import SwiftUI
 
 struct MainView: View {
+    let gradient = LinearGradient(colors: [.white, .accentColor],
+                                      startPoint: .topLeading,
+                                      endPoint: .bottomTrailing)
     var body: some View {
         TabView {
-            
-            //LeaderBoardView()
-            LeaderBoardView()
-                .tabItem {
+            ZStack{
+                //LeaderBoardView()
+                gradient
+                    .opacity(0.7)
+                    .ignoresSafeArea()
+                LeaderBoardView()
+            }
+            .tabItem {
                     Label("Leaderboard", systemImage: "list.number")
                 }
 
             ZStack {
-                MapButton()
-                Rectangle()
-                    .frame(height: 0.5)
-                    .foregroundColor(Color.clear)
+                VStack{
+                    MapButton()
+                    
+                    Rectangle()
+                        .frame(height: 0.5)
+                        .foregroundColor(Color.clear)
+                }
                             
             }
                 .tabItem {

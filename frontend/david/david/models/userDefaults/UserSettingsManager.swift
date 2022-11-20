@@ -44,19 +44,16 @@ public class UserSettingsManager: ObservableObject {
     /// A function to store the first name of a user on the phone
     public func addFirstName(firstName: String){
         userSettings.firstName = firstName
-        self.saveSettings()
     }
     /// A function to store the last name of a user on the phone
     public func addLastName(lastName: String){
         userSettings.lastName = lastName
-        self.saveSettings()
     }
     
 
     /// adds an category preference  to the list of category preferences
     public func addCategory(category: String) {
         userSettings.categoryPreference.insert(category)
-        self.saveSettings()
     }
 
 

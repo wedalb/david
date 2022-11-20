@@ -6,26 +6,43 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct CreateNoteView: View {
-    var note: NoteStruct
+    @State private var titleText = "Enter your headline"
+    @State private var descriptionText = "Tell us about your story :)"
+    
+    @StateObject var model = CreateNoteViewModel()
 
+    
     var body: some View {
+        NavigationView{
             VStack(alignment: .leading, spacing: 8) {
-                Text(note.note_title)
-                    .modifier(TitleModifierNotes())
-                    .frame(maxWidth: 170, alignment: .leading)
-                    .layoutPriority(1)
+
                 
-                Text(note.note_description)
+                Text("desc")
                     .modifier(TextModifierNotes())
                     .opacity(0.7)
                     .frame(maxWidth: .infinity, alignment: .leading)
+                
+                TextEditor(text: $descriptionText)
+                    .font(.body)
+                    .padding()
+                    .padding(.top, 20)
+                    .onChange(of: descriptionText) { value in
+                     //   model.createdNote.note_description = $descriptionText
+                    }
+                    .textInputAutocapitalization(.never)
+                    .disableAutocorrection(true)
+                    .border(.secondary)
                 Spacer()
+                
+                // Automatic name and date of author
                 HStack{
-                    Text("created on: " + note.note_created_at)
+                    Text("created on: ")
+                    Text(Date.now, style: .date)
                         .modifier(DescriptionModifierNotes())
-                    Text("by: " + note.note_author)
+                    Text("by: " + UserSettingsManager.settings.getSettings().firstName + UserSettingsManager.settings.getSettings().lastName)
                         .modifier(DescriptionModifierNotes())
                 }
             }
@@ -37,6 +54,7 @@ struct CreateNoteView: View {
             .shadow(radius: 4, x: -1, y: 5)
      //       .shadow(radius: 2, x: 0, y: 1)
         }
+    }
     
 }
 
