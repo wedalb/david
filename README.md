@@ -2,7 +2,7 @@
 Sticky notes app for munich
 
 # IDEA
-This is the github repository of an application for the event HackaTUM 2022, the annual Hackathon of TUM. This application basically improves user experience in the city of Munich with the help of gamification tools. The user can write stories about a building while roaming around the city and the stories are categorised into a particular genre with the help of Machine Learning, the fun part is that the users can read stories written by other people about a particular and can upvote or downvote them, then the gamification part comes into play, there is a leaderboard of stories based on the number of downvotes and upvotes it has got and attractive badges also appear on the profile of the user based on the number of stories written by the user.
+This is the github repository of an application for the event HackaTUM 2022, the annual Hackathon of TUM. This application basically improves the user experience in the city of Munich with the help of gamification tools. The user can write stories about a building while roaming around the city and the stories are categorised into a particular genre with the help of Machine Learning, the fun part is that the users can read stories written by other people about a particular and can upvote or downvote them, then the gamification part comes into play, there is a leaderboard of stories based on the number of downvotes and upvotes it has got and attractive badges also appear on the profile of the user based on the number of stories written by the user.
 
 # OBJECTIVE
 1. The app creates an environment where people can share and understand each other's ideas
