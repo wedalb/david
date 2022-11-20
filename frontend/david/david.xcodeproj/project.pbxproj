@@ -41,6 +41,8 @@
 		429FEA0229298608006B4A64 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FEA0129298608006B4A64 /* LottieView.swift */; };
 		6BA374B729297AC800557FD6 /* CreateNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA374B629297AC800557FD6 /* CreateNoteView.swift */; };
 		6BA374B929297EA700557FD6 /* CircleButtomModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA374B829297EA700557FD6 /* CircleButtomModifier.swift */; };
+		6BA374BD2929A2A800557FD6 /* UserLocationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA374BC2929A2A800557FD6 /* UserLocationButton.swift */; };
+		6BA374BF2929A5DD00557FD6 /* UserLocationBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA374BE2929A5DD00557FD6 /* UserLocationBack.swift */; };
 		6BD2903C29294E9E003FF0B1 /* Map_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD2903B29294E9E003FF0B1 /* Map_2.swift */; };
 		6BD2903E29294ED0003FF0B1 /* MapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD2903D29294ED0003FF0B1 /* MapButton.swift */; };
 /* End PBXBuildFile section */
@@ -85,6 +87,8 @@
 		429FEA0129298608006B4A64 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		6BA374B629297AC800557FD6 /* CreateNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteView.swift; sourceTree = "<group>"; };
 		6BA374B829297EA700557FD6 /* CircleButtomModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtomModifier.swift; sourceTree = "<group>"; };
+		6BA374BC2929A2A800557FD6 /* UserLocationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationButton.swift; sourceTree = "<group>"; };
+		6BA374BE2929A5DD00557FD6 /* UserLocationBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationBack.swift; sourceTree = "<group>"; };
 		6BD2903B29294E9E003FF0B1 /* Map_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map_2.swift; sourceTree = "<group>"; };
 		6BD2903D29294ED0003FF0B1 /* MapButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -208,6 +212,8 @@
 				429FE9E729294895006B4A64 /* StickyNoteSheetView.swift */,
 				429FE9DE29293B2E006B4A64 /* StickyNote.swift */,
 				6BA374B629297AC800557FD6 /* CreateNoteView.swift */,
+				6BA374BC2929A2A800557FD6 /* UserLocationButton.swift */,
+				6BA374BE2929A5DD00557FD6 /* UserLocationBack.swift */,
 			);
 			path = stickyNotes;
 			sourceTree = "<group>";
@@ -385,11 +391,13 @@
 				429FE9C5292925F5006B4A64 /* Color.swift in Sources */,
 				6BD2903E29294ED0003FF0B1 /* MapButton.swift in Sources */,
 				429FE9BE2929257E006B4A64 /* ListComponent.swift in Sources */,
+				6BA374BD2929A2A800557FD6 /* UserLocationButton.swift in Sources */,
 				429FE9D829292759006B4A64 /* TextModifier.swift in Sources */,
 				429FE9F7292970EB006B4A64 /* MapViewModel.swift in Sources */,
 				429FE9B929292542006B4A64 /* SceneDelegate.swift in Sources */,
 				429FE9F92929735A006B4A64 /* LeaderBoardViewModel.swift in Sources */,
 				429FE9CD2929265E006B4A64 /* NoteStruct.swift in Sources */,
+				6BA374BF2929A5DD00557FD6 /* UserLocationBack.swift in Sources */,
 				429FE9EF292950B6006B4A64 /* UIScreen.swift in Sources */,
 				429FE9C3292925DF006B4A64 /* KartenViewModel.swift in Sources */,
 				429FE9B52929250C006B4A64 /* MainView.swift in Sources */,

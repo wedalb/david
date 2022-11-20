@@ -9,28 +9,25 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        TabView {
-            
-            //LeaderBoardView()
-            LeaderBoardView()
-                .tabItem {
-                    Label("Leaderboard", systemImage: "list.number")
-                }
-
-            ZStack {
+        WindowGroup{
+            TabView {
+                
+                //LeaderBoardView()
+                LeaderBoardView()
+                    .tabItem {
+                        Label("Leaderboard", systemImage: "list.number")
+                    }
+                
+                
                 MapButton()
-                Rectangle()
-                    .frame(height: 0.5)
-                    .foregroundColor(Color.clear)
-                            
+                    .tabItem {
+                        Label("Map", systemImage: "map")
+                    }
+                AccountView()
+                    .tabItem {
+                        Label("Account", systemImage: "person")
+                    }
             }
-                .tabItem {
-                    Label("Map", systemImage: "map")
-                }
-            AccountView()
-                .tabItem {
-                    Label("Account", systemImage: "person")
-                }
         }
     }
 }
