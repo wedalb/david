@@ -112,7 +112,7 @@ public class Server {
 			path = "test.txt";
 		}
 
-		return Paths.get("C:\\Users\\Public\\HackaTUM", path);
+		return Paths.get("/Users/heidialbarazi/Documents/semester8/hackatum/david/backend/Server2/src/jsonFiles/", path); // "C:\\Users\\Public\\HackaTUM
 	}
 
 	private static String guessContentType(Path filePath) throws IOException {

@@ -1,0 +1,31 @@
+[
+   {
+      "Name":"English Garden"
+   },
+   {
+      "Latitude":"48.164121448437996"
+   },
+   {
+      "Longitude":"11.605741416848087"
+   },
+   {
+      "Notes":[
+         [
+            {
+               "Category":""
+            },
+            {
+               "Content":"Such a beautiful park in the heart of Munich"
+            }
+         ],
+         [
+            {
+               "Category":""
+            },
+            {
+               "Content":"It would not be Munich if the park did not have its own Beer Garden"
+            }
+         ]
+      ]
+   }
+]

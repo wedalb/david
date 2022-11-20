@@ -1,0 +1,31 @@
+[
+   {
+      "Name":"MI"
+   },
+   {
+      "Latitude":"48.262700611408555"
+   },
+   {
+      "Longitude":"11.66794478300002"
+   },
+   {
+      "Notes":[
+         [
+            {
+               "Category":""
+            },
+            {
+               "Content":"The Informatics department of TUM"
+            }
+         ],
+         [
+            {
+               "Category":""
+            },
+            {
+               "Content":"Very nice campus"
+            }
+         ]
+      ]
+   }
+]

@@ -34,6 +34,14 @@ struct MainView: View {
                 }
                             
             }
+            .tabItem {
+                Label("Map", systemImage: "map")
+            }
+            
+            AccountView()
+                .tabItem {
+                        Label("Account", systemImage: "person")
+                    }
         }
     }
 }

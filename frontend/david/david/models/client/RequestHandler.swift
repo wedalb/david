@@ -6,27 +6,34 @@
 //
 
 import Foundation
+import Logging
 
 struct RequestHandler{
-    
+
+    let url = "131.159.195.43:8080/48.137507736738335/11.575502142518554"
+
     let session = URLSession.shared
     static let shared = RequestHandler()
     
-    /**
-     A function that returns a url depending on what ghibli type you need (e.g. films, people, ...) you need.
-     - Parameter type: An enum of ghibli data that you want to get the url of
-     - Returns: A URL to the data inside of the ghibli api
-     */
-    func getURL (type: HTTPMethod) -> URL {
-        let url = "https://ghibliapi.herokuapp.com/\(type.rawValue)" + "" // putin what we have to do
+    
+    func getURL () -> URL {
         return URL(string: url)!
     }
     
     /// A function that gives us all notes
     func fetchNotes() async throws -> [NoteStruct] {
-        let (data, _) = try await session.data(from: getURL(type: HTTPMethod.GET))
+        let (data, _) = try await session.data(from: getURL())
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         return try decoder.decode([NoteStruct].self, from: data)
+    }
+    
+    
+    
+    func fetchData<T : Decodable>() async throws -> [T] {
+        let (data, _) = try await session.data(from: getURL())
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        return try decoder.decode([T].self, from: data)
     }
 }
