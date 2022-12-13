@@ -19,6 +19,4 @@ extension Color {
     static let textColor = Color("TextColor")
     static let descriptionColor = Color("DescriptionColor")
     static let yellowNotes = Color("YellowNotes")
-
-
 }

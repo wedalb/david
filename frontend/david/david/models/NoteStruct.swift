@@ -10,7 +10,7 @@ import SwiftUI
 import CoreLocation
 
 /// A struct for a Note that a User can create. This structure also follows the same structure as the Database table
-public struct NoteStruct: Decodable, Identifiable, Hashable {
+public struct NoteStruct: Codable, Identifiable, Hashable {
     
     public var id = UUID()
     public var note_title,

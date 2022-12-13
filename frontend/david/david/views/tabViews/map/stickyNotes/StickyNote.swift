@@ -41,6 +41,6 @@ struct StickyNote: View {
 
 struct StickyNote_Previews: PreviewProvider {
     static var previews: some View {
-        StickyNote(note: NoteStruct(note_title: "Mein Lieblingsort", note_description: "Hier ist meindkjbköebkjbe  epifhpehflejdvbljeblj efjhegfökjebökfbeökfjb fdjhegbfipuebfpibe ifgeipfbepifbiepbfkwbök fpwifpiebwfpiewbfpieb wpifbwkbfökwb fwihbfkwbfi wkbwkfbök wlkbwkjlfbmw fiwfbjkwfbklwfjbwbfpiube wökfbwpiubfpiuerbfpieubfibewljbfwebfir pwibfpierbfpierbfi wepifbeiprubfpierbfpei wepifberipubfpierubfrp lieblingsort", note_location_latitude: "43.234524", note_location_longitude: "23.234502", note_category: "happy", note_created_at: "23.06.2000", note_author: "Fish"))
+        StickyNote(note: NoteStruct(note_title: "My favourite place in the whole world", note_description: "This is where I have met my boyfriend for the first time. ",note_location_latitude: "23.234502",  note_location_longitude: "23.234502", note_category: "happy", note_created_at: "23.06.2000", note_author: "Fish"))
     }
 }

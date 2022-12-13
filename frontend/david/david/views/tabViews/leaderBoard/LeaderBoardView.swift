@@ -18,6 +18,13 @@ struct LeaderBoardView: View {
     
     @StateObject var model = LeaderBoardViewModel()
     
+    public var mockNotes = [
+        NoteStruct(note_title: "My favourite place", note_description: "This is my favourite place in the world, because this is where I have met my boyfriend. We went to a really nice restaurant and ate some very special food", note_location_latitude: "11.669046 48.262034", note_location_longitude: "11.670845 48.265421", note_category: "happy", note_created_at: "23.06.2022", note_author: "Sarah"),
+        NoteStruct(note_title: "Great place for halloween", note_description: "Me and my friends always used to tell each other scary stories at this place here. I was so scared", note_location_latitude: "34.43245", note_location_longitude: "23.356", note_category: "bdknle", note_created_at: "23.04.2022", note_author: "scaredPerson"),
+        NoteStruct(note_title: "Amazing nature", note_description: "As a student I always used to go on a hike at this place. Oh I miss these days", note_location_latitude: "34.43245", note_location_longitude: "11.669046 48.262034", note_category: "bdknle", note_created_at: "25.04.2012", note_author: "Hiker Mike"),
+        NoteStruct(note_title: "Cheap Food", note_description: "As a kis I always used to get the cheapest food here!", note_location_latitude: "11.669046 48.262034", note_location_longitude: "23.356", note_category: "bdknle", note_created_at: "15.04.2015", note_author: "Tony")
+        ]
+    
     var body: some View {
         NavigationView {
             
@@ -32,16 +39,10 @@ struct LeaderBoardView: View {
                         .foregroundColor(.red)
                     Spacer()
                     Spacer()
-                    Button(action: {
-                        Task{
-                            await model.load()
-                        }
-                    }){
+                    Button("Try Connecting Again!") {
                         HStack {
                             Image(systemName: "goforward")
                                 .font(.caption)
-                            Text("Try Connecting Again!")
-                                .modifier(TextModifierNotes())
                         }
                         .padding()
                         .background(Color.accentColor)
@@ -54,7 +55,31 @@ struct LeaderBoardView: View {
                 
                 // no connection error
             } else {
-                List(model.sortedNotes, id: \.id){ note in
+                VStack{
+                    LottieView(name:"rocketLottie")
+                    List(mockNotes, id: \.id){ note in
+                        GroupBox(label: Text(note.note_title), content: {
+                            Text(note.note_description)
+                                .padding(.top, 8)
+                        })
+                    }
+                    .navigationTitle("Leader Board")
+                    .toolbar {
+                        Menu {
+                            Text("Sort")
+                            Button(action: {
+                                model.setByTitleDescending(isDescending: !model.sortByTitleDescending)
+                            }, label: {
+                                let arrowType = model.sortByTitleDescending ? "down" : "up"
+                                Image(systemName: "arrow.\(arrowType)")
+                                Text("Alphabetically")
+                            })
+                        } label: {
+                            Image(systemName: "ellipsis.circle")
+                        }
+                    }
+                }
+                List(mockNotes, id: \.id){ note in
                     GroupBox(label: Text(note.note_title), content: {
                         Text(note.note_description)
                             .padding(.top, 8)
@@ -75,7 +100,9 @@ struct LeaderBoardView: View {
                         Image(systemName: "ellipsis.circle")
                     }
                 } }
-        }.task { await model.load() }
+        }.task {
+            try? await model.getNotes()
+        }
     }
 }
 

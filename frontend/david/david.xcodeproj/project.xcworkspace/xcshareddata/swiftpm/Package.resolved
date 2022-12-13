@@ -1,6 +1,51 @@
 {
   "pins" : [
     {
+      "identity" : "anycodable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Flight-School/AnyCodable",
+      "state" : {
+        "revision" : "862808b2070cd908cb04f9aafe7de83d35f81b05",
+        "version" : "0.6.7"
+      }
+    },
+    {
+      "identity" : "functions-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/supabase-community/functions-swift",
+      "state" : {
+        "branch" : "main",
+        "revision" : "bdaf7b34ab7bc25b4aa8092fc384367d8ae7a11f"
+      }
+    },
+    {
+      "identity" : "get",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kean/Get",
+      "state" : {
+        "revision" : "7209fdb015686fd90918b2037cb2039206405bd3",
+        "version" : "2.1.5"
+      }
+    },
+    {
+      "identity" : "gotrue-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/supabase-community/gotrue-swift",
+      "state" : {
+        "revision" : "32719c3487d144a0fd76b9cd7bc5606c1fc720b7",
+        "version" : "0.0.9"
+      }
+    },
+    {
+      "identity" : "keychainaccess",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kishikawakatsumi/KeychainAccess",
+      "state" : {
+        "revision" : "84e546727d66f1adc5439debad16270d0fdd04e7",
+        "version" : "4.2.2"
+      }
+    },
+    {
       "identity" : "lottie-ios",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/airbnb/lottie-ios.git",
@@ -10,12 +55,75 @@
       }
     },
     {
+      "identity" : "postgrest-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/supabase-community/postgrest-swift",
+      "state" : {
+        "branch" : "master",
+        "revision" : "bdfefaccca603cf03899804e4a4b5ecf5c62447e"
+      }
+    },
+    {
+      "identity" : "realtime-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/supabase-community/realtime-swift.git",
+      "state" : {
+        "revision" : "0b985c687fe963f6bd818ff77a35c27247b98bb4",
+        "version" : "0.0.2"
+      }
+    },
+    {
+      "identity" : "storage-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/supabase-community/storage-swift.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "04703e499ca258899d7ad45717efe75b8ddc09ab"
+      }
+    },
+    {
+      "identity" : "supabase-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/supabase-community/supabase-swift.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "9b4880a3d040ebe75064a85d556d70cb2e99c691"
+      }
+    },
+    {
+      "identity" : "swift-composable-keychain",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/binaryscraping/swift-composable-keychain",
+      "state" : {
+        "revision" : "3ebddfe9e9232218bada99ab6d6b3ca1fd94f112",
+        "version" : "0.0.2"
+      }
+    },
+    {
       "identity" : "swift-log",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-log.git",
       "state" : {
         "revision" : "6fe203dc33195667ce1759bf0182975e4653ba1c",
         "version" : "1.4.4"
+      }
+    },
+    {
+      "identity" : "urlqueryencoder",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kean/URLQueryEncoder",
+      "state" : {
+        "revision" : "4cc975d4d075d0e62699a796a08284e217d4ee93",
+        "version" : "0.2.0"
+      }
+    },
+    {
+      "identity" : "xctest-dynamic-overlay",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/xctest-dynamic-overlay",
+      "state" : {
+        "revision" : "5a5457a744239896e9b0b03a8e1a5069c3e7b91f",
+        "version" : "0.6.0"
       }
     }
   ],

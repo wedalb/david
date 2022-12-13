@@ -14,30 +14,15 @@ struct AccountView: View {
     var body: some View {
         VStack{
            
-            Image("testImage")
-                .profilePictureModifier()
-                .padding(20.0)
+            LottieView(name: "userProfileLottie")
             
             Divider()
-            Text("My Author Name:").modifier(TitleModifier())
+            Text("My Author Name: Sarah").modifier(TitleModifier())
             
-                TextField(text: $firstName, prompt: Text("Max")) {
-                    Text("First Name")
-                }
-            TextEditor(text: $firstName)
-                .font(.body)
-                .padding()
-                .padding(.top, 20)
-                .onChange(of: firstName) { value in
-           /*         UserSettingsManager.settings.addFirstName(firstName: firstName)
-                    UserSettingsManager.settings.saveSettings() */
-                }
-                .textInputAutocapitalization(.never)
-                .disableAutocorrection(true)
-                .border(.secondary)
-
+            
             
             Divider()
+            Spacer()
             Spacer()
         }.padding(40.0)
         

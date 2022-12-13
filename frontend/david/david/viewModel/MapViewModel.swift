@@ -7,7 +7,7 @@ import Foundation
 class MapsViewModel : ObservableObject {
     @Published var notes: [NoteStruct] = []
     @Published var hasError = false
-
+/*
     
     // A function to load our notes when we re in the maps view
     func load() async {
@@ -16,7 +16,7 @@ class MapsViewModel : ObservableObject {
         }
         do {
             let notes: [NoteStruct]
-            try notes = await RequestHandler.shared.fetchNotes()
+          try notes = await RequestHandler.shared.fetchNotes()
             DispatchQueue.main.async { // to publish movies in main thread
                 self.notes = notes
             }
@@ -25,5 +25,5 @@ class MapsViewModel : ObservableObject {
                 self.hasError = true
             }
         }
-    }
+    }*/
 }
