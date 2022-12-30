@@ -8,23 +8,23 @@ class LeaderBoardViewModel : ObservableObject {
     @Published var hasError = false
     private let logger = Logger(label: "LeaderBoardViewModel")
     // newly created notes go here
-    @Published var notes: [Note] = []
     @Published var createdNotes: Note = Note()
-    
-    // That way we connect to supabase where our table is stored
-    lazy var client = SupabaseClient(supabaseURL: URL(string: "https://jodkgsfhjztbcgmcndti.supabase.co")!,
-                                     supabaseKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpvZGtnc2Zoanp0YmNnbWNuZHRpIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Njg4NTM4NTUsImV4cCI6MTk4NDQyOTg1NX0.mTSLfxdVGoZ5EAMG8Dygnn89SdA3hlOm2DGwGYr7SiQ")
+    @Published var notes: [Note]?
 
-    
+    func getNotes() {
+        getAllNotes { notes in
+            self.notes = notes
+        }
+    }
     @Published var sortByTitleDescending = false
     
     var sortedNotes: [Note] {
         if sortByTitleDescending {
-            return notes.sorted { (lhs: Note, rhs: Note) -> Bool in
+            return notes!.sorted { (lhs: Note, rhs: Note) -> Bool in
                 return lhs.title > rhs.title
             }
         } else {
-            return notes.sorted { (lhs: Note, rhs: Note) -> Bool in
+            return notes!.sorted { (lhs: Note, rhs: Note) -> Bool in
                 return lhs.title < rhs.title
             }
         }
@@ -34,26 +34,7 @@ class LeaderBoardViewModel : ObservableObject {
         sortByTitleDescending = isDescending
     }
     
-    func getNotes() async throws {
-        let query = client
-            .database
-            .from("notes_table")
-            .select()
-        
-        guard let response = try? await query.execute(),
-              let createdNotes = try? response.decoded(to: [Note].self)
-        else {
-            print("error encoding notes")
-            throw NSError()
-        }
-        
-        DispatchQueue.main.async {
-            self.notes = createdNotes
-        }
-    }
-    
-    
-    
+
  /*   // A function to load our notes when we re in the maps view
     func load() async {
         logger.info("LeaderBoardViewModel will load info now")

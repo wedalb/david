@@ -21,9 +21,6 @@ public struct Note: Codable, Identifiable, Hashable {
         author,
         ranking: String
     
-
-    
-    // initialize an empty note
     init(title: String,
          description: String,
          latitude: String,

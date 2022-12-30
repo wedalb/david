@@ -33,11 +33,16 @@ struct LeaderBoardView: View {
             } else {
                 VStack{
                     LottieView(name:"rocketLottie")
-                    List(mockNotes, id: \.id){ note in
-                        GroupBox(label: Text(note.title), content: {
-                            Text(note.description)
-                                .padding(.top, 8)
-                        })
+                    List {
+                        ForEach(mockNotes, id: \.id) { note in
+                            GroupBox(label: Text(note.title), content: {
+                                Text(note.description)
+                                    .padding(.top, 8)
+                            })
+                        }
+                    }
+                    .onAppear {
+                        model.getNotes()
                     }
                     .navigationTitle("Leader Board")
                     .toolbar {
