@@ -9,7 +9,7 @@ import MapKit
 import SwiftUI
 
 
-struct Note: Identifiable {
+struct Noty: Identifiable {
     let id = UUID()
     let name: String
     let coordinate: CLLocationCoordinate2D
@@ -52,10 +52,10 @@ struct MapView: View {
     }
     
     let annotations = [
-        Note(name: "Siegestor", coordinate: CLLocationCoordinate2D(latitude: 48.152337, longitude: 11.582165)),
-        Note(name: "Alte Pinakothek", coordinate: CLLocationCoordinate2D(latitude: 48.148271, longitude: 11.569977)),
-        Note(name: "TUM", coordinate: CLLocationCoordinate2D(latitude: 48.262034, longitude: 11.569977)),
-        Note(name: "Natur", coordinate: CLLocationCoordinate2D(latitude:  48.265421, longitude: 11.669046)),
+        Noty(name: "Siegestor", coordinate: CLLocationCoordinate2D(latitude: 48.152337, longitude: 11.582165)),
+        Noty(name: "Alte Pinakothek", coordinate: CLLocationCoordinate2D(latitude: 48.148271, longitude: 11.569977)),
+        Noty(name: "TUM", coordinate: CLLocationCoordinate2D(latitude: 48.262034, longitude: 11.569977)),
+        Noty(name: "Natur", coordinate: CLLocationCoordinate2D(latitude:  48.265421, longitude: 11.669046)),
     ]
     
 }

@@ -5,7 +5,7 @@ import Foundation
 
 /// A viewmodel to load a list of notes from the server
 class MapsViewModel : ObservableObject {
-    @Published var notes: [NoteStruct] = []
+    @Published var notes: [Note] = []
     @Published var hasError = false
 /*
     

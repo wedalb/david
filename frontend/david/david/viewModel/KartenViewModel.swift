@@ -67,7 +67,7 @@ final class KartenViewModel: NSObject, ObservableObject, CLLocationManagerDelega
     
     
     /// returns a set of nearby notes: This function tells you what notes are nearby
-    func loadNearbyNotes() -> Set<NoteStruct> {
+    func loadNearbyNotes() -> Set<Note> {
         return Set()
     }
     

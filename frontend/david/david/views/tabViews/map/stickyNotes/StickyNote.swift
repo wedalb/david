@@ -7,24 +7,24 @@
 import SwiftUI
 
 struct StickyNote: View {
-    var note: NoteStruct
+    var note: Note
 
     var body: some View {
             VStack(alignment: .leading, spacing: 8) {
-                Text(note.note_title)
+                Text(note.title)
                     .modifier(TitleModifierNotes())
                     .frame(maxWidth: 170, alignment: .leading)
                     .layoutPriority(1)
                 
-                Text(note.note_description)
+                Text(note.description)
                     .modifier(TextModifierNotes())
                     .opacity(0.7)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 Spacer()
                 HStack{
-                    Text("created on: " + note.note_created_at)
+                    Text("created on: " + note.created_at)
                         .modifier(DescriptionModifierNotes())
-                    Text("by: " + note.note_author)
+                    Text("by: " + note.author)
                         .modifier(DescriptionModifierNotes())
                 }
             }
@@ -41,6 +41,6 @@ struct StickyNote: View {
 
 struct StickyNote_Previews: PreviewProvider {
     static var previews: some View {
-        StickyNote(note: NoteStruct(note_title: "My favourite place in the whole world", note_description: "This is where I have met my boyfriend for the first time. ",note_location_latitude: "23.234502",  note_location_longitude: "23.234502", note_category: "happy", note_created_at: "23.06.2000", note_author: "Fish"))
+        StickyNote(note: Note(title: "My favourite place in the whole world", description: "This is where I have met my boyfriend for the first time. ",latitude: "23.234502",  longitude: "23.234502", created_at: "23.06.2000", author: "Fish"))
     }
 }

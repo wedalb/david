@@ -48,7 +48,7 @@ struct CreateNoteView: View {
                 //Button
                 Button("Create new Note"){
                     let location = locationManager.location
-                    model.createNote(note_title: title, note_description: descriptionText, note_location_latitude: "\(String(describing: locationManager.location?.latitude))" , note_location_longitude:  "\(String(describing: locationManager.location?.longitude))", note_category: "", note_created_at: "", note_author: "")
+                    model.createNote(note_title: title, note_description: descriptionText, note_location_latitude: "\(String(describing: locationManager.location?.latitude))" , note_location_longitude:  "\(String(describing: locationManager.location?.longitude))", note_created_at: "", note_author: "")
                 }
                 
             }

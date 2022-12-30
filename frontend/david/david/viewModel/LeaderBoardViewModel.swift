@@ -8,8 +8,8 @@ class LeaderBoardViewModel : ObservableObject {
     @Published var hasError = false
     private let logger = Logger(label: "LeaderBoardViewModel")
     // newly created notes go here
-    @Published var notes: [NoteStruct] = []
-    @Published var createdNotes: NoteStruct = NoteStruct()
+    @Published var notes: [Note] = []
+    @Published var createdNotes: Note = Note()
     
     // That way we connect to supabase where our table is stored
     lazy var client = SupabaseClient(supabaseURL: URL(string: "https://jodkgsfhjztbcgmcndti.supabase.co")!,
@@ -18,14 +18,14 @@ class LeaderBoardViewModel : ObservableObject {
     
     @Published var sortByTitleDescending = false
     
-    var sortedNotes: [NoteStruct] {
+    var sortedNotes: [Note] {
         if sortByTitleDescending {
-            return notes.sorted { (lhs: NoteStruct, rhs: NoteStruct) -> Bool in
-                return lhs.note_title > rhs.note_title
+            return notes.sorted { (lhs: Note, rhs: Note) -> Bool in
+                return lhs.title > rhs.title
             }
         } else {
-            return notes.sorted { (lhs: NoteStruct, rhs: NoteStruct) -> Bool in
-                return lhs.note_title < rhs.note_title
+            return notes.sorted { (lhs: Note, rhs: Note) -> Bool in
+                return lhs.title < rhs.title
             }
         }
     }
@@ -41,7 +41,7 @@ class LeaderBoardViewModel : ObservableObject {
             .select()
         
         guard let response = try? await query.execute(),
-              let createdNotes = try? response.decoded(to: [NoteStruct].self)
+              let createdNotes = try? response.decoded(to: [Note].self)
         else {
             print("error encoding notes")
             throw NSError()
